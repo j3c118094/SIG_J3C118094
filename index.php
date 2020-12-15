@@ -57,7 +57,7 @@
                     <div class="col">
                     </div>
                     <div class="col">
-                        <form method="POST" action="assets/process.php">
+                        <form id=selection method="POST" action="assets/process.php">
                             <div class="form-group">
                                 <select name="data" onchange="enable()" class="form-control shadow" id="exampleFormControlSelect1">
                                     <option value="" disabled selected>--- Pilih Data ---</option>
@@ -66,8 +66,9 @@
                                     <option value="kl">Peta Sebaran Jumlah Rumah Klinik</option>
                                 </select>
                             </div>
-                            <button id="buka" disabled type="submit" class="btn btn-primary w-100 my-1 text-white font-weight-bold">BUKA</button>
-                        </form>
+                          </form>        
+                          <button id="buka" disabled onclick="submit()" class="btn btn-primary w-100 my-1 text-white font-weight-bold">BUKA</button>
+                  
                     </div>
 
                     <div class="col">
@@ -79,6 +80,16 @@
         <script>
             function enable(){
                 $('#buka').prop('disabled', false);
+            }
+
+            function submit(){
+                $('body').fadeOut();
+                window.setTimeout(  
+                function() {  
+                    $('#selection').submit();
+                    },  
+                    1000
+                );
             }
         </script>
 </body>
