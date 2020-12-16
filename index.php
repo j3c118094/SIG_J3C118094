@@ -82,7 +82,7 @@
                         <?php 
                             $ip = $_SERVER['REMOTE_ADDR'];
                             $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
-                            echo '<span style="font-weight: 300; font-size: 14px">Anda mengakses dari : '.$details->city.' Koordinat : '.$details->loc.'</span>'; // -> "Mountain View
+                            echo '<span style="font-weight: 300; font-size: 14px">Anda mengakses dari : '.$details->city.', Koordinat : '.$details->loc.'</span>'; // -> "Mountain View
                         ?>
                      </div>
                     <div class="col">
