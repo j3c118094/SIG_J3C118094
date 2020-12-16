@@ -26,7 +26,7 @@
 
     </style>
 </head>
-<body>
+<body style="display : none;">
 
 
         <section id="header" >
@@ -91,6 +91,11 @@
                     1000
                 );
             }
+
+            $( document ).ready(function() {
+                $('body').fadeIn(1000);
+            });
+
         </script>
 </body>
 </html>

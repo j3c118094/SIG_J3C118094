@@ -67,13 +67,17 @@
         <title></title>
     </head>
     <body>
-
+        <section  >
+            <div id="cover" class="container-fluid" style="z-index: 10000; height: 100vh; background-color: #fff; position: absolute;">
+            </div>
+        </section>
         <section id="header" >
+            
 
             <div class="container-fluid shadow-sm sticky-top" style="height: 8vh; width: 100%;">
                 <div class="row h-100">
                     <div class="col my-auto text-center">
-                        <a href="../../../index.php" class="text-dark">MENU</a> &nbsp;&nbsp; / &nbsp;&nbsp; PETA SEBARAN JUMLAH RUMAH SAKIT 
+                        <a href="../../../index.php" id="back" class="text-dark">MENU</a> &nbsp;&nbsp; / &nbsp;&nbsp; PETA SEBARAN JUMLAH RUMAH SAKIT 
                     </div>
                 </div>
             </div>
@@ -96,6 +100,23 @@
         </section>
 
 
+        <script>
+
+            
+            $('#back').click(function() {
+                $('body').fadeOut();
+                window.setTimeout(  
+                function() {  
+                    window.location = "../../../index.php";
+                    },  
+                    1000
+                );
+            });
+
+            $( document ).ready(function() {
+                $('#cover').fadeOut(1000);
+            });
+        </script>
 
         <script src="resources/qgis2web_expressions.js"></script>
         <script src="resources/polyfills.js"></script>
