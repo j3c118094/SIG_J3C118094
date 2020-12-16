@@ -78,7 +78,7 @@
                 <div class="row" style="height: 25%;">
                     <div class="col">
                     </div>
-                    <div class="col text-center">
+                    <div class="col-6 text-center">
                         <?php 
                             $ip = $_SERVER['REMOTE_ADDR'];
                             $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
