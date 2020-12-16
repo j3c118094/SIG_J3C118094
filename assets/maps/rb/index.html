@@ -12,8 +12,6 @@
         <link rel="stylesheet" type="text/css" href="resources/ol3-search-layer.min.css">
         <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
         <link rel="stylesheet" href="./resources/qgis2web.css">
-
-
         <!-- FONTS -->
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
 
@@ -60,24 +58,25 @@
         }
         </style>
         <style>
-        html, body, #map {
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            margin: 0;
+        #map {
+            width: 1003px;
+            height: 619px;
         }
         </style>
         <title></title>
     </head>
     <body>
-
-
+        <section  >
+            <div id="cover" class="container-fluid" style="z-index: 10000; height: 100vh; background-color: #fff; position: absolute;">
+            </div>
+        </section>
         <section id="header" >
+            
 
             <div class="container-fluid shadow-sm sticky-top" style="height: 8vh; width: 100%;">
                 <div class="row h-100">
                     <div class="col my-auto text-center">
-                        MENU
+                        <a href="../../../index.php" id="back" class="text-dark">MENU</a> &nbsp;&nbsp; / &nbsp;&nbsp; <span style="font-weight: 800;">SEBARAN JUMLAH RUMAH BERSALIN </span>
                     </div>
                 </div>
             </div>
@@ -85,11 +84,11 @@
         </section>
 
         <section>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <div id="map">
-                            <div id="popup" class="ol-popup">
+            <div class="container-fluid" style="height: 92vh;">
+                <div class="row h-100">
+                    <div class="col h-100">
+                        <div id="map" class="h-100 w-100">
+                            <div id="popup" class="ol-popup" style="min-width: 300px;">
                                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
                                 <div id="popup-content"></div>
                             </div>
@@ -98,7 +97,26 @@
                 </div>
             </div>
         </section>
-        
+
+
+        <script>
+
+            
+            $('#back').click(function() {
+                $('body').fadeOut();
+                window.setTimeout(  
+                function() {  
+                    window.location = "../../../index.php";
+                    },  
+                    1000
+                );
+            });
+
+            $( document ).ready(function() {
+                $('#cover').fadeOut(1000);
+            });
+        </script>
+
         <script src="resources/qgis2web_expressions.js"></script>
         <script src="resources/polyfills.js"></script>
         <script src="./resources/functions.js"></script>

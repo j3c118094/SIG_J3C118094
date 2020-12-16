@@ -74,6 +74,44 @@
                     <div class="col">
                     </div>
                 </div>
+
+                <div class="row" style="height: 25%;">
+                    <div class="col">
+                    </div>
+                    <div class="col text-center">
+                        <?php 
+                            $ip = $_SERVER['REMOTE_ADDR'];
+                            $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
+                            echo '<span style="font-weight: 300; font-size: 14px">Anda mengakses dari : '.$details->City.' Koordinat : '.$details->loc.'</span>'; // -> "Mountain View
+                        ?>
+                     </div>
+                    <div class="col">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col text-center">
+                        <a style="font-weight: 300; font-size: 14px; text-decoration: none;" href="https://bekasikab.bps.go.id/subject/30/kesehatan.html#subjekViewTab3">Direct Data Source (BPS Kab. Bekasi)</a>
+                    </div>
+
+                    <div class="col">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col text-center">
+                        <a style="font-weight: 300; font-size: 14px; text-decoration: none;" href="./assets/maps/files/">Unduh Peta</a>
+                    </div>
+
+                    <div class="col">
+                    </div>
+                </div>
+
+                
             </div>
         </section>
 

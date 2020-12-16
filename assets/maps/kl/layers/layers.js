@@ -25,10 +25,10 @@ var lyr_JumlahRumahSakit_1 = new ol.layer.Vector({
                 style: style_JumlahRumahSakit_1,
                 interactive: true,
     title: 'Jumlah Rumah Sakit<br />\
-    <img src="styles/legend/JumlahRumahSakit_1_0.png" /> Sangat Kurang (0)<br />\
-    <img src="styles/legend/JumlahRumahSakit_1_1.png" /> Kurang (< 2)<br />\
-    <img src="styles/legend/JumlahRumahSakit_1_2.png" /> Baik (< 5)<br />\
-    <img src="styles/legend/JumlahRumahSakit_1_3.png" /> Sangat Baik ( < 9 )<br />'
+    <img src="styles/legend/JumlahRumahSakit_1_0.png" /> Memadai (< 17)<br />\
+    <img src="styles/legend/JumlahRumahSakit_1_1.png" /> Cukup (< 34)<br />\
+    <img src="styles/legend/JumlahRumahSakit_1_2.png" /> Baik (< 54)<br />\
+    <img src="styles/legend/JumlahRumahSakit_1_3.png" /> Sangat Baik (< 101)<br />'
         });
 
 lyr_OpenStreetMap_0.setVisible(true);lyr_JumlahRumahSakit_1.setVisible(true);

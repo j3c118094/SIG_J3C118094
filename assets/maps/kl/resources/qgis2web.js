@@ -38,7 +38,7 @@ layerSwitcher.showPanel();
 
 
     var searchLayer = new SearchLayer({
-      layer: lyr_JumlahRumahBersalin_1,
+      layer: lyr_JumlahRumahSakit_1,
       colName: 'Kec',
       zoom: 10,
       collapsed: true,
@@ -50,7 +50,7 @@ layerSwitcher.showPanel();
     .getElementsByTagName('button')[0].className +=
     ' fa fa-binoculars';
     
-map.getView().fit([11895187.068467, -728539.599682, 11955172.334827, -657760.381069], map.getSize());
+map.getView().fit([11882414.540269, -723116.260768, 11996226.889750, -652343.527525], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
