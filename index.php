@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebGis J3C118094</title>
 
     <!-- FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
@@ -16,7 +16,7 @@
 
 
     <!-- jQuery library -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./assets/js/jq.js"></script>
 
     <style>
 
