@@ -63,7 +63,7 @@
                                     <option value="" disabled selected>--- Pilih Data ---</option>
                                     <option value="rs">Peta Sebaran Jumlah Rumah Sakit</option>
                                     <option value="rb">Peta Sebaran Jumlah Rumah Bersalin</option>
-                                    <option value="kl">Peta Sebaran Jumlah Rumah Klinik</option>
+                                    <option value="kl">Peta Sebaran Jumlah Klinik</option>
                                 </select>
                             </div>
                           </form>        
